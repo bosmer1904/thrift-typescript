@@ -5,7 +5,7 @@ Generate TypeScript from Thrift IDL files.
 ## Installation
 
 ```sh
-$ npm install --save @creditkarma/thrift-typescript
+$ npm install --save @bosmer1904/thrift-typescript
 ```
 
 ## Usage

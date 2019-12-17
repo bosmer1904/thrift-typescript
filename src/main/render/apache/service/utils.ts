@@ -13,5 +13,5 @@ export function createStructArgsName(
 export function createStructResultName(
     def: FunctionDefinition | FieldDefinition,
 ): string {
-    return `${capitalize(def.name.value)}Result`
+    return `${capitalize(def.name.value)}ServiceResult`
 }
