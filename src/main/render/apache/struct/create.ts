@@ -229,10 +229,10 @@ export function renderFieldDeclarations(
     state: IRenderState,
 ): ts.PropertyDeclaration {
     const defaultValue =
-        field.defaultValue !== null
-            ? renderValue(field.fieldType, field.defaultValue, state)
-            : undefined
-
+        // field.defaultValue !== null
+        //     ? renderValue(field.fieldType, field.defaultValue, state)
+        //     : undefined
+        renderValue(field.fieldType, field.defaultValue as any, state)
     return ts.createProperty(
         undefined,
         [ts.createToken(ts.SyntaxKind.PublicKeyword)],

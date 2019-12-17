@@ -25,6 +25,9 @@ export function renderValue(
     node: ConstValue,
     state: IRenderState,
 ): ts.Expression {
+    if (!node) {
+        return ts.createNull()
+    }
     switch (node.type) {
         case SyntaxType.Identifier:
             return ts.createIdentifier(
